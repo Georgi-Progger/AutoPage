@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'LeoHand';
+    src: local('LeoHand Regular'), local('LeoHand-Regular'),
+        url('LeoHand.woff2') format('woff2'),
+        url('LeoHand.woff') format('woff'),
+        url('LeoHand.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

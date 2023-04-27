@@ -1,6 +1,7 @@
 import React from 'react';
-import logo1 from "../imgs/Group 13 (1).png"
-import logo2 from "../imgs/Group 14.png"
+import logo1 from "./imgs/Group 13 (1).png"
+import logo2 from "./imgs/Group 14.png"
+import Tele from "./imgs/Vector.png"
 import "./Header.css"
 const Header : React.FC = () => {
   return (
@@ -31,6 +32,7 @@ const Header : React.FC = () => {
         </nav>
 
         <div className='Telephone'>
+            <img src={Tele}/>
             <p>8 (8672) 404 222</p>
         </div>
     </div>

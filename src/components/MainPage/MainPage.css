@@ -1,3 +1,41 @@
-.MainPhoto >img{
-    max-width: 100%;
+@font-face { 
+    font-family: "LeoHand";
+    src: 
+    url("../fonts/LeoHand.woff") format("woff"),
+    url("../fonts/LeoHand.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 200px;
 }
+
+.MainPhoto{
+    background-image: url("../imgs/photo.png");
+    width: 100%;
+    height: 846px;
+    align-items: center;
+}
+
+.TextMain{
+    padding-top: 100px;
+    padding-left: 300px;
+    font-family: 'Renault Life';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+
+.TextMain >p{
+    margin: 0;
+}
+
+.TextMain >p >span{
+    
+    color: #DBA418;
+    font-family: 'LeoHand';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 90px;
+    line-height: 100px;
+}
+

@@ -4,7 +4,11 @@ import "./MainPage.css"
 const MainPage : React.FC = () => {
   return (
     <div className='MainPhoto'>
-        <img src={MainPhoto}/>
+      <div className='TextMain'>
+        <p>Лёгкое начало<br/>
+          пути <span>вместе</span> <br/>
+          с Алания - Авто</p>
+      </div>
     </div>
   );
 }
