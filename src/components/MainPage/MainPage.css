@@ -9,20 +9,22 @@
 
 .MainPhoto{
     background-image: url("../imgs/photo.png");
-    width: 100%;
-    height: 846px;
-    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .TextMain{
-    padding-top: 100px;
-    padding-left: 300px;
     font-family: 'Renault Life';
     font-style: normal;
     font-weight: 700;
     font-size: 90px;
     line-height: 100px;
     color: #FFFFFF;
+    padding-top: 10vh; 
+    padding-left: 10vw; 
+    line-height: 1.2;
 }
 
 .TextMain >p{
@@ -35,7 +37,42 @@
     font-family: 'LeoHand';
     font-style: normal;
     font-weight: 200;
-    font-size: 90px;
+    font-size: 6vw; 
     line-height: 100px;
 }
 
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 768px) {
+    /* изменяем отступы для мобильных экранов */
+    .TextMain {
+        padding-top: 5vh;
+        padding-left: 5vw;
+    }
+    
+    /* изменяем размер шрифта для мобильных экранов */
+    .TextMain > p {
+        font-size: 3vw;
+    }
+    
+    .TextMain > p > span {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* изменяем отступы для экранов с маленькой шириной */
+    .TextMain {
+        padding-top: 3vh;
+        padding-left: 3vw;
+    }
+    
+    /* изменяем размер шрифта для экранов с маленькой шириной */
+    .TextMain > p {
+        font-size: 2.5vw;
+    }
+    
+    .TextMain > p > span {
+        font-size: 4vw;
+    }
+}
