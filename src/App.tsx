@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Header from "./components/Header"
+import Header from "./components/HeaderPage/Header"
 import Main from "./components/MainPage/MainPage"
 
 const App : React.FC = () => {
@@ -8,8 +8,10 @@ const App : React.FC = () => {
     <div className="App">
       <header className="App-header">
         <Header/>
-        <Main/>
       </header>
+      <main>
+        <Main/>
+      </main>
     </div>
   );
 }

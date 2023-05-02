@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Renault Life';
+    src: local('Renault Life Bold'), local('Renault-Life-Bold'),
+        url('RenaultLife-Bold.woff2') format('woff2'),
+        url('RenaultLife-Bold.woff') format('woff'),
+        url('RenaultLife-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
