@@ -5,6 +5,7 @@ const MainPage : React.FC = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [isRadioChecked, setIsRadioChecked] = useState(false);
 
+
   const togglePopup = () => {
     setShowPopup(!showPopup);
   };
@@ -59,9 +60,9 @@ const MainPage : React.FC = () => {
       )}
       <div className='MainPhoto'>
         <div className='TextMain'>
-          <p>Лёгкое начало
-            пути <span>вместе </span> 
-            с Алания - Авто
+          <p>Лёгкое начало пути   
+            <span> вместе </span> <br/> 
+             с Алания - Авто
           </p>
         </div>
       </div>
@@ -80,7 +81,15 @@ const MainPage : React.FC = () => {
             Легко обменяем старый на новый</p>
           </div>
           </div>
-        <div className='InfoPhoto'></div>
+        
+          <div className='InfoPhoto'></div>
+      </div>
+      <div className={`Logo-animation${showPopup ? ' z-index-negative' : ''}`}>
+        <div className='Logo-animation-img'></div>
+      </div>
+      <div className='Availability'>
+        <div className='AvailabilityPhoto'></div>
+        <div className='Availability-back'></div>
       </div>
   </div>
 );

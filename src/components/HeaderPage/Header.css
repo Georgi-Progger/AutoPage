@@ -1,11 +1,17 @@
 
 .header{
-    margin-left: 200px;
-    margin-right: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 82px;
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 82px;
+  background-color: white;
+  z-index: 999;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 .headerLogo{
     display: flex;
@@ -68,13 +74,13 @@
     color: #6c6c6c;
     border-bottom: 3px solid transparent;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .list {
       display: none;
     }
     .header{
-        margin-left: 16px;
-        margin-right: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -106,3 +112,9 @@
         margin-right: 11px;
     }
   }
+@media screen and (min-width: 900px) and (max-width: 1600px ) {
+    .header{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

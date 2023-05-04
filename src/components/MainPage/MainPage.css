@@ -15,15 +15,15 @@
 
 .main{
     min-width: 100%;
+    padding-top: 82px;
 }
 .MainPhoto{
     margin-left: auto;
     margin-right: auto;
-    background-image: url("../imgs/photo.png");
+    background-image: url("../imgs/photo.png") ;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    
     max-width: 100%;
     height: 846px;
 }
@@ -34,15 +34,16 @@
     font-weight: 700;
     font-size: 90px;
     color: #FFFFFF;
-    padding-top: 100px; 
-    padding-left: 300px; 
     line-height: 1.1;
     width: 724px;
     height: 300px;
+    padding-top: 100px;
+    margin-left: 300px;
 }
 
 .TextMain >p{
     margin: 0;
+    padding-top: 20px;
 }
 
 .TextMain >p >span{
@@ -138,6 +139,7 @@
 
 .InfoPhoto{
     background-image: url("../imgs/photo 2.png");
+    background-size: cover;
     width: 861px;
     height: 500px;
     margin-top: 140px;
@@ -236,15 +238,71 @@ input[type="radio"]::before {
     background-color: #DBA418;
     border-radius: 5px;
 }
+.Logo-animation{
+    bottom: 130px;
+    left: 0;
+    max-width: 100%;
+    height: 229px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+  
+.Logo-animation.z-index-negative {
+    z-index: 0;
+}
+.Logo-animation-img{
+    position: relative;
+    background-size: contain;
+    background-image: url("../imgs/Alania-Avto.png");
+    white-space: nowrap;
+    width: 100%;
+    height: 229px;
+    animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+.Availability {
+    position: relative;
+    height: 547px;
+}
+    
+
+.AvailabilityPhoto{
+    background-image: url("../imgs/cars.png");
+    max-width: 758px;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.Availability-back{
+    width: 100%;
+    height: 375px;
+    background: #F3F2F7;
+    position: absolute;
+    z-index: -1;
+}
 
 
-
-@media (max-width: 900px) {
+@media   screen and (min-width: 200px) and (max-width: 900px){
+    .main{
+        min-width: 100%;
+        padding-top: 82px;
+    }
     .MainPhoto{
         margin-left: auto;
         margin-right: auto;
         height: 331px;
     }
+
     .TextMain {font-family: 'Renault Life';
         font-style: normal;
         font-weight: 700;
@@ -253,10 +311,12 @@ input[type="radio"]::before {
         display: flex;
         align-items: center;
         margin-right: 16px;
-        margin-top: 38px;
         padding-left: 16px;
-        width: 328px;
+        width: 370px;
         height: 86px;
+    }
+    .TextMain >p{
+        padding-top: 70px;
     }
     .Info{
         display: none;
@@ -268,6 +328,7 @@ input[type="radio"]::before {
         border-radius: 50%;
         width: 52px;
         height: 52px;
+        left: 280px
     }
     .CallWindow >p{
         display: none;
@@ -280,9 +341,9 @@ input[type="radio"]::before {
         margin:0 auto;
     }
   }
-@media screen and (min-width: 900px) and (max-width: 1600px ) {
+@media screen and (min-width: 900px) and (max-width: 1800px ) {
     .MainPhoto{
-        background-size: 100%;
+        background-size: cover;
         height: 677px;
     }
     .InfoPhoto{
@@ -302,10 +363,10 @@ input[type="radio"]::before {
         line-height: 1.0;
         width: 724px;
         height: 300px;
+        padding-left: 100px
     }
     .CallWindow{
         font-size: 16px;
-        right: 200px;
         width: 180px;
         height: 38px;
     }
