@@ -220,10 +220,10 @@ input[type="radio"]::before {
     padding: 10px 20px;
     border-radius: 5px;
     display: flex;
-    
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    z-index: 3;
 }
 .PopupOverlay {
     position: fixed;
@@ -268,19 +268,22 @@ input[type="radio"]::before {
       transform: translateX(-100%);
     }
 }
+
 .Availability {
     position: relative;
     height: 547px;
+    top:50px;
 }
     
 
 .AvailabilityPhoto{
     background-image: url("../imgs/cars.png");
-    max-width: 758px;
+    width: 758px;
     height: 100%;
     background-size: cover;
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    z-index: 0;
+    margin-left: 78px;
 }
 
 .Availability-back{
@@ -289,6 +292,7 @@ input[type="radio"]::before {
     background: #F3F2F7;
     position: absolute;
     z-index: -1;
+    bottom: 0;
 }
 
 
@@ -342,6 +346,9 @@ input[type="radio"]::before {
     }
   }
 @media screen and (min-width: 900px) and (max-width: 1800px ) {
+    .main{
+        padding-top: 0;
+    }
     .MainPhoto{
         background-size: cover;
         height: 677px;
@@ -350,9 +357,12 @@ input[type="radio"]::before {
         background-size: 100%;
         background-position: center center;
         background-repeat: no-repeat;
-        width: 859px;
+        width: 669px;
         height: 410px;
         margin-top: 140px;
+    }
+    .InfoMain {
+        margin-left: 200px;
     }
     .TextMain{
         font-family: 'Renault Life';
@@ -363,11 +373,16 @@ input[type="radio"]::before {
         line-height: 1.0;
         width: 724px;
         height: 300px;
-        padding-left: 100px
+        padding-left: 0px;
+        padding-top: 50px;
+        margin-left: 300px;
     }
     .CallWindow{
         font-size: 16px;
         width: 180px;
         height: 38px;
     }
+    .Logo-animation-img {
+        height: 186px;
   }
+}
