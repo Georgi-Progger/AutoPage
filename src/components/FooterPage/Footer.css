@@ -1,0 +1,125 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ccc;
+}
+.footer-up{
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 109px;
+  background-color: white;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.footerLogo >a{
+    display: flex;
+    align-items: center;
+}
+.Logo{
+    background-image: url("../imgs/Group 13 (1).png");
+    width: 42.54px;
+    height: 32px;
+}
+.Logo2{
+    background-image: url("../imgs/Group 14.png");
+    width: 143px;
+    height: 15.49px;
+    margin-left: 13px;
+    background-size: cover;
+    margin: 0 auto; 
+    margin-left: 12px;
+}
+.Telephone-down{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #302420;
+}
+.Telephone-down >img{
+    max-width: 16px;
+    max-height: 16px;
+    margin-right: 16px;
+}
+.list-up{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 11px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.list-up >li{
+    display: inline-block;
+    margin-right: 40px;
+    line-height: 38px;
+    color: #333333;
+}
+.list-up li a:hover, .list-up li a:active {
+    border-top: 3px solid black;
+}
+.list-up >li >a{
+    display: block;
+    text-decoration: none;
+    line-height: 2;
+    color: #6c6c6c;
+    border-top: 3px solid transparent;
+}
+
+.footer-down{
+    display: flex;
+    height: 60px;
+    background: #F3F2F7;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.footerRef{
+    display: flex;
+    align-items: center;
+}
+.Ref{
+    background-image: url("../imgs/icon-instagram.png");
+    width: 24px;
+    height: 24px;  
+}
+.Ref2{
+    background-image: url("../imgs/icon-avito.png");
+    width: 70px;
+    height: 20px; 
+    margin-left: 28px;
+}
+
+.First{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+
+
+color: #9F9F9F;
+}
+
+.Second{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+
+
+    color: #9F9F9F;
+}

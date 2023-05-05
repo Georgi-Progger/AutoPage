@@ -6,8 +6,10 @@ const Header : React.FC = () => {
     
     <div className='header'>
         <div className='headerLogo'>
-            <div className='Logo'></div>
-            <div className='Logo2'></div>
+            <a href='/'>
+                <div className='Logo'></div>
+                <div className='Logo2'></div>
+            </a>
         </div>
         <nav>
             <ul className='list'>

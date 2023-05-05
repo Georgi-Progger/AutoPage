@@ -81,15 +81,46 @@ const MainPage : React.FC = () => {
             Легко обменяем старый на новый</p>
           </div>
           </div>
-        
           <div className='InfoPhoto'></div>
       </div>
       <div className={`Logo-animation${showPopup ? ' z-index-negative' : ''}`}>
         <div className='Logo-animation-img'></div>
       </div>
       <div className='Availability'>
-        <div className='AvailabilityPhoto'></div>
+        <div className='AvailabilityContent'>
+          <div className='AvailabilityPhoto'>
+            <div className='AvailabilityPhoto-Inside'>
+
+            </div>
+          </div>
+          <div className='Stick2'></div>
+          <div className='AvailabilityMainText'>
+            <div className='AvailabilityContentIcon'>
+              <div className='AvailabilityIcon'>
+                <div className='AvailabilityIcon-Inside'></div>
+              </div>
+              <p>Большой выбор автомоблей в наличии</p>
+            </div>
+            <p >Большой выбор автомобилей российских и зарубежных марок.<br/> 
+            Все автомобили проходят комплексную проверку на юридическую чистоту и техническое состояние</p>
+          </div>
+        </div>
         <div className='Availability-back'></div>
+      </div>
+      <div className='Selection'>
+        <div className='SelectionMain'>
+          <div className='Stick3'></div>
+          <div className='SelectionMainText'>
+            <div className='SelectionMainText-Inside'>
+              <div className='SelectionIcon'>
+                <div className='SelectionIcon-Inside'></div>
+              </div>
+              <p>Подбор и доставка <br/> под заказ</p>
+            </div>
+              <p>Нет подходящего автомобиля в наличии?<br/> Мы подберём и доставим его из любой точки страны</p>
+            </div>
+          </div>
+          <div className='SlectionPhoto'></div>
       </div>
   </div>
 );
