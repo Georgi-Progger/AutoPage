@@ -210,15 +210,15 @@ input[type="radio"]::before {
     font-weight: 600;
     font-size: 20px;
     line-height: 40px;
-    width: 200px;
-    height: 48px;
+    width: 218px;
+    height: 52px;
     position: fixed;
     bottom: 50px;
     right: 6vw;
     background-color: #DBA418;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,7 +260,7 @@ input[type="radio"]::before {
     white-space: nowrap;
     width: 1900px;
     height: 100%;
-    animation: marquee 5s linear infinite;
+    animation: marquee 65s linear infinite;
 }
 @-webkit-keyframes marquee {
     0% {
@@ -332,6 +332,7 @@ input[type="radio"]::before {
 }
 .AvailabilityMainText{
     margin-left: 24px;
+    font-size: 3vw;
 }
 .AvailabilityIcon{
     width: 76px;
@@ -369,13 +370,13 @@ input[type="radio"]::before {
     margin-top: 0;
 }
 
-.AvailabilityMainTextSpan >p{
+.AvailabilityMainTextSpan {
     width: auto;
     height: auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: vw;
+    font-size: 50%;
     line-height: 38px;
     display: flex;
     align-items: center;
@@ -385,29 +386,31 @@ input[type="radio"]::before {
 
 
 .Selection{
-    height: 744px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: auto;
 }
 .SelectionMain{
     font-family: 'Renault Life';
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 3vw;
     line-height: 68px;
     height: 280px;
     margin-top: 140px;
-    margin-left: 300px;
+    margin-left: 8vw;
     justify-content: start;
     display: flex;
 }
-.SlectionPhoto{
+.SelectionPhoto{
     background-image: url("../imgs/selection.png");
     background-size: cover;
-    width: 833px;
-    height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 45vw;
+    height: 28vw;
     margin-top: 140px;
-    right: 0px;
 }
 .SelectionIcon{
     width: 76px;
@@ -436,7 +439,6 @@ input[type="radio"]::before {
 
 .SelectionMainText-Inside{
     display: flex;
-    justify-content: space-between;
 }
 
 .SelectionMainText-Inside > p{
@@ -472,13 +474,32 @@ input[type="radio"]::before {
     margin: 0;
 }
 
+.SelectionMainTextSpan >p{
+    width: auto;
+    height: auto;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50%;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
 
-
-
-.Selection{
-    display: none;
+    margin-top: 20px;
 }
+
+.InfoMainText >p >span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+    margin: 0;
+}
+
+
+
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -739,7 +760,66 @@ input[type="radio"]::before {
         margin-left: 16px;
     }
     .Selection{
-        display: none;
+        flex-wrap: wrap;
+    }
+    .SelectionMain{
+        margin-top: 30px;
+        font-family: 'Renault Life';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        height: 218px;
+        margin-left: 0;
+    }
+    .SelectionPhoto{
+        width: 100vw;
+        height: 58vw;
+        margin-top:0;
+    }
+      
+    .Stick3 {
+        position: absolute;
+        width: 4px;
+        height: 69px;
+        margin-top: 125px;
+        z-index: 1;
+        margin-left: 16px;
+    }
+
+    .SelectionMainText{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    
+    .SelectionMainText-Inside{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-left: 16px;
+    }
+    
+    .SelectionMainTextSpan >p{
+        width: auto;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        padding-left:28px ;
+        margin-top: 0;
+        align-items: center;
+        margin-bottom: 0;
+        background-color: #F3F2F7;
+    }
+    .SelectionMainTextSpan{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        background-color: #F3F2F7;
+        height: 116px;
+        margin-top: 20px;
     }
 }
 /*@media   screen and (min-width: 200px) and (max-width: 900px){

@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
     border-top: 1px solid #ccc;
+    margin-top: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .footer-up{
   top: 0;
@@ -123,9 +127,196 @@ color: #9F9F9F;
 
     color: #9F9F9F;
 }
-
-@media (max-width: 1800px ){
-    .footer{
-        display: none;
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .footer-up{
+        padding-left: 32px;
+        padding-right: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
+    .footer-down{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .list {
+        display: none;
+      }
+      .headerMain{
+        height: 64px;
+      }
+      .header{
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 64px;
+    }
+    .Logo{
+        width: 26.52px;
+        height: 22px;
+        background-size: cover;
+        background-position: center;
+    }
+    .Logo2{
+        width: 98px;
+        height: 10.65px;
+        background-size: cover;
+        background-position: center;
+        margin-left: 8px;
+    }
+    .Telephone{      
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        font-variant: small-caps;
+    }
+    .Telephone >img{
+        width: 11.98px;
+        height: 12.86px;
+        background-size: cover;
+        margin-right: 11px;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .list {
+        display: none;
+      }
+      .headerMain{
+        height: 56px;
+      }
+      .header{
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+    }
+    .Logo{
+        width: 26.52px;
+        height: 22px;
+        background-size: cover;
+        background-position: center;
+    }
+    .Logo2{
+        width: 98px;
+        height: 10.65px;
+        background-size: cover;
+        background-position: center;
+        margin-left: 8px;
+    }
+    .Telephone{      
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        font-variant: small-caps;
+    }
+    .Telephone >img{
+        width: 11.98px;
+        height: 12.86px;
+        background-size: cover;
+        margin-right: 11px;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .list-up{
+        display: none;
+      }
+      .headerMain{
+        height: 56px;
+      }
+      .header{
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+    }
+    .Logo{
+        width: 26.52px;
+        height: 22px;
+        background-size: cover;
+        background-position: center;
+    }
+    .Logo2{
+        width: 98px;
+        height: 10.65px;
+        background-size: cover;
+        background-position: center;
+        margin-left: 8px;
+    }
+    .Telephone{      
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        font-variant: small-caps;
+    }
+    .Telephone >img{
+        width: 11.98px;
+        height: 12.86px;
+        background-size: cover;
+        margin-right: 11px;
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .list-up {
+        display: none;
+      }
+      .footer-up{
+        height: 56px;
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+    }
+    .footer-down{
+        justify-content:baseline;
+        height: auto;
+        padding-left: 16px;
+        padding-right: 16px;}
+    .LogoFooter{
+        width: 26.52px;
+        height: 22px;
+        background-size: cover;
+        background-position: center;
+    }
+    .LogoFooter2{
+        width: 98px;
+        height: 10.65px;
+        background-size: cover;
+        background-position: center;
+        margin-left: 8px;
+    }
+    .Telephone-down{      
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        font-variant: small-caps;
+    }
+    .Telephone-down >img{
+        width: 11.98px;
+        height: 12.86px;
+        background-size: cover;
+        margin-right: 11px;
+    }
+    .First, .Second {
+        display: block;
+      }
+     
+      
 }

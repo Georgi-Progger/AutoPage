@@ -119,11 +119,13 @@ const MainPage : React.FC = () => {
                 <div className='SelectionIcon-Inside'></div>
               </div>
               <p>Подбор и доставка <br/> под заказ</p>
-            </div>
-              <p>Нет подходящего автомобиля в наличии?<br/> Мы подберём и доставим его из любой точки страны</p>
+              </div>
+              <div className='SelectionMainTextSpan'>
+                <p>Нет подходящего автомобиля в наличии?<br/> Мы подберём и доставим его из любой точки страны</p>
+              </div>
             </div>
           </div>
-          <div className='SlectionPhoto'></div>
+          <div className='SelectionPhoto'></div>
       </div>
   </div>
 );
