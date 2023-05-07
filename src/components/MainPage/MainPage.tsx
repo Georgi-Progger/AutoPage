@@ -59,12 +59,10 @@ const MainPage : React.FC = () => {
         </div>
       )}
       <div className='MainPhoto'>
-        <div className='TextMain'>
-          <p>Лёгкое начало пути   
-            <span> вместе </span> <br/> 
+      <p className='TextMain'>Лёгкое начало пути   
+            <span> вместе </span>  <br/>
              с Алания - Авто
           </p>
-        </div>
       </div>
       <div className='Info'>
         <div className='InfoMain'>
@@ -76,9 +74,11 @@ const MainPage : React.FC = () => {
               </div>
               <p>Выкуп. Продажа.<br/> Трейд-ин</p>
             </div>
-            <p>Выгодно выкупим любой автомобиль. 
-            Быстро продадим Ваш автомобиль. 
-            Легко обменяем старый на новый</p>
+            <div className='InfoMainTextSpan'>
+              <p>Выгодно выкупим любой автомобиль. <br/>
+              Быстро продадим Ваш автомобиль. <br/>
+              Легко обменяем старый на новый</p>
+            </div>
           </div>
           </div>
           <div className='InfoPhoto'></div>
@@ -93,16 +93,18 @@ const MainPage : React.FC = () => {
 
             </div>
           </div>
-          <div className='Stick2'></div>
-          <div className='AvailabilityMainText'>
-            <div className='AvailabilityContentIcon'>
-              <div className='AvailabilityIcon'>
-                <div className='AvailabilityIcon-Inside'></div>
+          <div className='AvailabilityText'>
+            <div className='Stick2'></div>
+            <div className='AvailabilityMainText'>
+              <div className='AvailabilityContentIcon'>
+                <div className='AvailabilityIcon'>
+                  <div className='AvailabilityIcon-Inside'></div>
+                </div>
+                <p>Большой выбор автомоблей в наличии</p>
               </div>
-              <p>Большой выбор автомоблей в наличии</p>
+              <p >Большой выбор автомобилей российских и зарубежных марок.<br/> 
+              Все автомобили проходят комплексную проверку на юридическую чистоту и техническое состояние</p>
             </div>
-            <p >Большой выбор автомобилей российских и зарубежных марок.<br/> 
-            Все автомобили проходят комплексную проверку на юридическую чистоту и техническое состояние</p>
           </div>
         </div>
         <div className='Availability-back'></div>

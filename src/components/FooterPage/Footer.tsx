@@ -8,8 +8,8 @@ const Footer : React.FC = () => {
         <div className='footer-up'>
             <div className='footerLogo'>
                 <a href='/'>
-                    <div className='Logo'></div>
-                    <div className='Logo2'></div>
+                    <div className='LogoFooter'></div>
+                    <div className='LogoFooter2'></div>
                 </a>
             </div>
             <nav>
@@ -39,10 +39,10 @@ const Footer : React.FC = () => {
         </div>
         <div className='footer-down'>
             <div className='footerRef'>
-                <a href='/'>
+                <a href='https://instagram.com/alania_auto?igshid=NTc4MTIwNjQ2YQ=='>
                     <div className='Ref'></div>
                 </a>
-                <a>
+                <a href='https://m.avito.ru/user/2e0c069a6a63cf7d6d36972ec64ffbc6/profile'>
                     <div className='Ref2'></div>   
                 </a>
             </div>
