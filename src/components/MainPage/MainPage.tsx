@@ -85,25 +85,26 @@ const MainPage : React.FC = () => {
       </div>
       <div className={`Logo-animation${showPopup ? ' z-index-negative' : ''}`}>
         <div className='Logo-animation-img'></div>
+        <div className='Logo-animation-img'></div>
       </div>
       <div className='Availability'>
         <div className='AvailabilityContent'>
           <div className='AvailabilityPhoto'>
-            <div className='AvailabilityPhoto-Inside'>
-
-            </div>
+            <div className='AvailabilityPhoto-Inside'></div>
           </div>
-          <div className='AvailabilityText'>
+          <div className='AvailabilityMain'>
             <div className='Stick2'></div>
             <div className='AvailabilityMainText'>
               <div className='AvailabilityContentIcon'>
                 <div className='AvailabilityIcon'>
                   <div className='AvailabilityIcon-Inside'></div>
                 </div>
-                <p>Большой выбор автомоблей в наличии</p>
+                <p>Большой выбор <br/> автомоблей в наличии</p>
               </div>
-              <p >Большой выбор автомобилей российских и зарубежных марок.<br/> 
-              Все автомобили проходят комплексную проверку на юридическую чистоту и техническое состояние</p>
+              <div className='AvailabilityMainTextSpan'>
+                <p >Большой выбор автомобилей российских и зарубежных марок.<br/> 
+                Все автомобили проходят комплексную проверку на юридическую чистоту <br/> и техническое состояние</p>
+              </div>
             </div>
           </div>
         </div>
