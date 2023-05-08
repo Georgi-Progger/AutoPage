@@ -1,9 +1,33 @@
 import React from 'react';
 import Tele from "../imgs/Vector.png"
 import "./Footer.css"
+
+
+
+function callTelephone(number:string){
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    let url = '';
+    if (isMobile && typeof window !== 'undefined') {
+      if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        url = `tel://${number}`;
+      } else if (/Android/i.test(navigator.userAgent)) {
+        url = `tel:${number}`;
+      }
+    } 
+    if (url) {
+      window.open(url);
+    }
+}
+
+
 const Footer : React.FC = () => {
     const address = 'г.Владикавказ, Архонское шоссе, 2-ой км';
     const mapUrl = `https://yandex.ru/maps/?text=${encodeURIComponent(address)}`;
+
+    function handlePhoneClick() {
+        const number = "88672404222";
+        callTelephone(number);
+      }
   return (
     
     <div className='footer' id='footer'>
@@ -36,7 +60,7 @@ const Footer : React.FC = () => {
 
             <div className='Telephone-down'>
                 <img src={Tele}/>
-                <p>8 (8672) 404 222</p>
+                <p onClick={handlePhoneClick}>8 (8672) 404 222</p>
             </div>
         </div>
         <div className='footer-down'>

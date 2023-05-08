@@ -163,10 +163,14 @@
 }
 .Popup >ul{
     list-style-type: none;
+    padding-left: 0;
 }   
 .Popup >ul >li{
     margin-bottom: 7px;
     height: 54px;
+}
+.CallPop >.CallIcon{
+    margin-right: 12px;
 }
 input[type="radio"] {
     float: right;
@@ -224,7 +228,7 @@ input[type="radio"]::before {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    z-index: 3;
+    z-index: 2;
 }
 .PopupOverlay {
     position: fixed;
@@ -615,6 +619,16 @@ input[type="radio"]::before {
         border-radius: 50%;
         width: 52px;
         height: 52px;
+        padding: 0;
+    }
+    .CallWindow >p{
+        display: none;
+    }
+    .CallIcon{
+        width: 21.67px;
+        height: 21.67px;
+        margin-right: 0;
+        background-size: cover;
     }
     .Info{
         flex-wrap: wrap;
@@ -821,6 +835,22 @@ input[type="radio"]::before {
         background-color: #F3F2F7;
         height: 116px;
         margin-top: 20px;
+    }
+    .CallApp{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        max-height: 412px;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+        z-index: 2;
+        overflow: auto;
+        color: black;
     }
 }
 /*@media   screen and (min-width: 200px) and (max-width: 900px){
