@@ -166,6 +166,7 @@
 }   
 .Popup >ul >li{
     margin-bottom: 7px;
+    height: 54px;
 }
 input[type="radio"] {
     float: right;

@@ -5,7 +5,7 @@ const Header : React.FC = () => {
   return (
     
     <div className='headerMain'>
-        <div className='header'>
+        <div className='header' id='header'>
             <div className='headerLogo'>
                 <a href='/'>
                     <div className='Logo'></div>
@@ -15,19 +15,19 @@ const Header : React.FC = () => {
             <nav>
                 <ul className='list'>
                     <li>
-                        <a href='#'>Главная</a>
+                        <a href='#MainPhoto'>Главная</a>
                     </li>
                     <li>
-                        <a href='#'>Выкуп</a>
+                        <a href='#Info'>Выкуп</a>
                     </li>
                     <li>
-                        <a href='#'>В наличии</a>
+                        <a href='#Availability'>В наличии</a>
                     </li>
                     <li>
-                        <a href='#'>Автоподбор</a>
+                        <a href='#Selection'>Автоподбор</a>
                     </li>
                     <li>
-                        <a href='#'>Контакты</a>
+                        <a href='#footer'>Контакты</a>
                     </li>
                 </ul>
             </nav>

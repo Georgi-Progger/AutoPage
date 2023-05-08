@@ -2,9 +2,11 @@ import React from 'react';
 import Tele from "../imgs/Vector.png"
 import "./Footer.css"
 const Footer : React.FC = () => {
+    const address = 'г.Владикавказ, Архонское шоссе, 2-ой км';
+    const mapUrl = `https://yandex.ru/maps/?text=${encodeURIComponent(address)}`;
   return (
     
-    <div className='footer'>
+    <div className='footer' id='footer'>
         <div className='footer-up'>
             <div className='footerLogo'>
                 <a href='/'>
@@ -15,19 +17,19 @@ const Footer : React.FC = () => {
             <nav>
                 <ul className='list-up'>
                     <li>
-                        <a href='#'>Главная</a>
+                        <a href='#MainPhoto'>Главная</a>
                     </li>
                     <li>
-                        <a href='#'>Выкуп</a>
+                        <a href='#Info'>Выкуп</a>
                     </li>
                     <li>
-                        <a href='#'>В наличии</a>
+                        <a href='#Availability'>В наличии</a>
                     </li>
                     <li>
-                        <a href='#'>Автоподбор</a>
+                        <a href='#Selection'>Автоподбор</a>
                     </li>
                     <li>
-                        <a href='#'>Контакты</a>
+                        <a href='#header'>Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -47,7 +49,11 @@ const Footer : React.FC = () => {
                 </a>
             </div>
             <p className='First'>2023 © Алания - Авто. Все права защищены.</p>
-            <p className='Second'>г.Владикавказ, Архонское шоссе, 2-ой км</p>
+            <p className='Second'>
+                <a href={mapUrl} target='_blank' rel='noopener noreferrer' style={{ color: 'gray' }}>
+                    {address}
+                </a>
+            </p>
         </div>
     </div>
   );

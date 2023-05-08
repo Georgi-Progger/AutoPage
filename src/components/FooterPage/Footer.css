@@ -108,13 +108,13 @@
 
 .First{
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
 
 
-color: #9F9F9F;
+    color: #9F9F9F;
 }
 
 .Second{

@@ -30,13 +30,13 @@ const MainPage : React.FC = () => {
           <List/>
         </div>
       )}
-      <div className='MainPhoto'>
+      <div className='MainPhoto' id='MainPhoto'>
       <p className='TextMain'>Лёгкое начало пути   
             <span> вместе </span>  <br/>
              с Алания - Авто
           </p>
       </div>
-      <div className='Info'>
+      <div className='Info' id='Info'>
         <div className='InfoMain'>
           <div className='Stick'></div>
           <div className='InfoMainText'>
@@ -59,7 +59,7 @@ const MainPage : React.FC = () => {
         <div className='Logo-animation-img'></div>
         <div className='Logo-animation-img'></div>
       </div>
-      <div className='Availability'>
+      <div className='Availability' id="Availability">
         <div className='AvailabilityContent'>
           <div className='AvailabilityPhoto'>
             <div className='AvailabilityPhoto-Inside'></div>
@@ -82,7 +82,7 @@ const MainPage : React.FC = () => {
         </div>
         <div className='Availability-back'></div>
       </div>
-      <div className='Selection'>
+      <div className='Selection' id='Selection'>
         <div className='SelectionMain'>
           <div className='Stick3'></div>
           <div className='SelectionMainText'>

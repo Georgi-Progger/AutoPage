@@ -7,6 +7,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html, body {
+  scroll-behavior: smooth;
+}
 #root{
   width: 100%
 }
