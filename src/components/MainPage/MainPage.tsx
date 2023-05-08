@@ -1,5 +1,7 @@
 import React , { useState } from 'react';
 import "./MainPage.css"
+import List from "../ListManager/ListPage"
+
 const MainPage : React.FC = () => {
 
   const [showPopup, setShowPopup] = useState(false);
@@ -15,9 +17,6 @@ const MainPage : React.FC = () => {
     setIsRadioChecked(false);
   };
 
-  const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setIsRadioChecked(event.target.checked);
-  };
 
   return (
     <div className='main'>
@@ -28,34 +27,7 @@ const MainPage : React.FC = () => {
       {showPopup && (
         <div>
           <div className='PopupOverlay' onClick={closePopup}></div>
-          <div className='Popup'>
-            <ul>
-              <li>
-                <label htmlFor='option1'>Олег</label>
-                <input
-                  type='radio'
-                  id='option1'
-                  name='options'
-                  value='1'
-                  onChange={handleRadioChange}
-                />
-              </li>
-              <li>
-                <label htmlFor='option2'>Аслан</label>
-                <input
-                  type='radio'
-                  id='option2'
-                  name='options'
-                  value='2'
-                  onChange={handleRadioChange}
-                />
-              </li>
-            </ul>
-            <div className={`CallPop ${!isRadioChecked ? 'disabled' : ''}`}>
-              <div className='CallIcon'></div>
-              Позвонить
-            </div>
-          </div>
+          <List/>
         </div>
       )}
       <div className='MainPhoto'>
