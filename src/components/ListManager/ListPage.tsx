@@ -34,6 +34,7 @@ const ListPage : React.FC = () => {
 
   function handleRadioChange(event : React.ChangeEvent<HTMLInputElement>) {
     setSelectedOption(event.target.value);
+    setIsRadioChecked(true);
   }
 
   function handleCallClick() {
