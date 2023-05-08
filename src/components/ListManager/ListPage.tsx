@@ -7,30 +7,39 @@ const phoneNumbers: Record<string, string> =  {
   "4": "+111111111",
   "5": "+999999999",
 };
-function callNumber(number:string) {
+
+function callTelephone(number:string){
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   let url = '';
-
   if (isMobile && typeof window !== 'undefined') {
     if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
       url = `tel://${number}`;
     } else if (/Android/i.test(navigator.userAgent)) {
       url = `tel:${number}`;
     }
-  } else {
-    url = `https://web.whatsapp.com/send?phone=${encodeURIComponent(number)}`;
+  } 
+  if (url) {
+    window.open(url);
   }
-
+}
+function callWhatsApp(number:string){
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  let url = '';
+  url = `https://web.whatsapp.com/send?phone=${encodeURIComponent(number)}`;
   if (url) {
     window.open(url);
   }
 }
 
 
+
+
+
 const ListPage : React.FC = () => {
     const isMobile = /Mobile|Android/.test(navigator.userAgent);
   const [selectedOption, setSelectedOption] = useState("");
   const [isRadioChecked, setIsRadioChecked] = useState(false);
+  const [showCallPopup, setShowCallPopup] = useState(false);
 
   function handleRadioChange(event : React.ChangeEvent<HTMLInputElement>) {
     setSelectedOption(event.target.value);
@@ -39,10 +48,18 @@ const ListPage : React.FC = () => {
 
   function handleCallClick() {
     const number = phoneNumbers[selectedOption];
-    callNumber(number);
+    setShowCallPopup(true);
   }
 
+  function handlePhoneClick() {
+    const number = phoneNumbers[selectedOption];
+    callTelephone(number);
+  }
 
+  function handleWhatsappClick() {
+    const number = phoneNumbers[selectedOption];
+    callWhatsApp(number);
+  }
 
     if (isMobile) {
       return (
@@ -103,6 +120,12 @@ const ListPage : React.FC = () => {
             <div className='CallIcon'></div>
             Позвонить
           </div>
+          {showCallPopup && (
+        <div>
+          <div onClick={handlePhoneClick}><p>Телефон</p> </div>
+           <div onClick={handleWhatsappClick}><p>Ватсапп</p></div>
+        </div>
+      )}
         </div>
       );
     } else {
