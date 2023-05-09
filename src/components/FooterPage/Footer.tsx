@@ -78,6 +78,7 @@ const Footer : React.FC = () => {
                     {address}
                 </a>
             </p>
+           
         </div>
     </div>
   );

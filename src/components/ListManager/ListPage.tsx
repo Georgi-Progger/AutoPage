@@ -68,6 +68,7 @@ const ListPage : React.FC = () => {
         return (
         
           <div className='Popup'>
+            <p>Выберете менеджера:</p>
             <ul>
               <li>
                 <label htmlFor='option1'>Евгений Сергеевич Грировский</label>
@@ -122,7 +123,7 @@ const ListPage : React.FC = () => {
             </ul>
             <div className={`CallPop ${!isRadioChecked ? 'disabled' : ''}`} onClick={handleCallClick}>
               <div className='CallIcon'></div>
-              Позвонить
+              <p style={{margin:"0"}}>Позвонить</p>
             </div>
             
           
@@ -131,10 +132,17 @@ const ListPage : React.FC = () => {
       }else{
         return(
           <div className='CallApp'>
+            <p  style={{ display: 'block' }}>Выберете способ связи:</p>
             {showCallPopup && (
-            <div>
-              <div onClick={handlePhoneClick}><p>Телефон</p> </div>
-              <div onClick={handleWhatsappClick}><p>Ватсапп</p></div>
+            <div  style={{ display: 'flex',alignItems:"center", justifyContent: "center", color:"gray"}}>
+              <div style={{marginRight:'54px', textAlign:"center"}} onClick={handlePhoneClick}>
+                <div className='TelephoneNumber'></div>
+                <p>Мобильная связь</p>
+              </div>
+              <div onClick={handleWhatsappClick}>
+                <div className='WhatsApp'></div>
+                <p>WhatsApp</p>
+              </div>
             </div>)}
           </div>
         );

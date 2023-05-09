@@ -150,12 +150,12 @@
     align-items: center;
     top: 50%;
     left: 50%;
-    max-width: 460px;
+    width: 90%;
     max-height: 412px;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     z-index: 2;
     overflow: auto;
@@ -187,7 +187,7 @@ input[type="radio"]::before {
     background-color: #DBA418;
     color: #fff;
     bottom: 0;
-    width: 316px;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     font-size: 20px;
@@ -292,7 +292,7 @@ input[type="radio"]::before {
 }
 
 .AvailabilityPhoto{
-    width: 40vw;
+    width:  60vw;
     height: 30vw;
     margin-left: 78px;
     margin-right: 0;
@@ -502,8 +502,20 @@ input[type="radio"]::before {
     line-height: 38px;
     margin: 0;
 }
-
-
+.TelephoneNumber{
+    margin-left: 30%;
+    background-image: url("../imgs/Telephone.png");
+    background-size: cover;
+    width: 40.19px;
+    height: 40.19px;
+}
+.WhatsApp{
+    margin-left: 30%;
+    background-image: url("../imgs/вацап.png");
+    background-size: cover;
+    width: 40.19px;
+    height: 40.19px;
+}
 
 
 /* Portrait tablets and medium desktops */
@@ -814,7 +826,9 @@ input[type="radio"]::before {
         justify-content: start;
         margin-left: 16px;
     }
-    
+    .First{
+        display: none;
+    }
     .SelectionMainTextSpan >p{
         width: auto;
         font-family: 'Roboto';
@@ -837,109 +851,35 @@ input[type="radio"]::before {
         margin-top: 20px;
     }
     .CallApp{
-        display: flex;
+        font-family: 'Roboto';
+        font-style: normal;
+        display: block;
+        text-align: center;
         position: fixed;
-        bottom: 0;
+        bottom: -100px;
         left: 50%;
         width: 100%;
-        max-height: 412px;
+        height: 156px;
         transform: translate(-50%, -50%);
         background-color: white;
         padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
         z-index: 2;
         overflow: auto;
         color: black;
     }
-}
-/*@media   screen and (min-width: 200px) and (max-width: 900px){
-    .main{
-        min-width: 100%;
-        padding-top: 82px;
-    }
-    .MainPhoto{
-        margin-left: auto;
-        margin-right: auto;
-        height: 331px;
-    }
-
-    .TextMain {font-family: 'Renault Life';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 40px;
-        display: flex;
-        align-items: center;
-        margin-right: 16px;
-        padding-left: 16px;
-        width: 370px;
-        height: 86px;
-    }
-    .TextMain >p{
-        padding-top: 70px;
-    }
-    .Info{
-        display: none;
-    }
-    .CallWindow{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        width: 52px;
-        height: 52px;
-        left: 280px
-    }
-    .CallWindow >p{
-        display: none;
-    }
-    .CallIcon{
-        display: block;
-        background-image: url("../imgs/CallBig.png");
-        width: 21.67px;
-        height: 21.67px;
-        margin:0 auto;
-    }
-  }
-@media screen and (min-width: 900px) and (max-width: 1800px ) {
-    .main{
-        padding-top: 0;
-    }
-    .MainPhoto{
-        background-size: cover;
-        height: 677px;
-    }
-    .InfoPhoto{
-        background-size: 100%;
-        background-position: center center;
-        background-repeat: no-repeat;
-        width: 669px;
-        height: 410px;
-        margin-top: 140px;
-    }
-    .InfoMain {
-        margin-left: 200px;
-    }
-    .TextMain{
-        font-family: 'Renault Life';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 80px;
-        color: #FFFFFF;
-        line-height: 1.0;
-        width: 724px;
-        height: 300px;
-        padding-left: 0px;
-        padding-top: 50px;
-        margin-left: 300px;
-    }
-    .CallWindow{
+    .Popup >p{
+        font-weight: 500;
         font-size: 16px;
-        width: 180px;
-        height: 38px;
+        line-height: 20px;
+        color: #000000;
+        margin-bottom: 36px;
     }
-    .Logo-animation-img {
-        height: 186px;
-  }
-}*/
+    .CallApp >p{
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        margin-bottom: 25px;
+    }
+}
