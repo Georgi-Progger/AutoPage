@@ -150,7 +150,7 @@
     align-items: center;
     top: 50%;
     left: 50%;
-    width: 90%;
+    width: 636px;
     max-height: 412px;
     transform: translate(-50%, -50%);
     background-color: white;
@@ -161,13 +161,34 @@
     overflow: auto;
     color: black;
 }
+.Popup >p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 36px;
+}
 .Popup >ul{
     list-style-type: none;
     padding-left: 0;
 }   
 .Popup >ul >li{
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 7px;
     height: 54px;
+}
+.Popup >ul >li > p{
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+.manager{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
 }
 .CallPop >.CallIcon{
     margin-right: 12px;
@@ -866,6 +887,9 @@ input[type="radio"]::before {
         z-index: 2;
         overflow: auto;
         color: black;
+    }
+    .Popup{
+        width: 90%;
     }
     .Popup >p{
         font-weight: 500;

@@ -150,7 +150,29 @@ const ListPage : React.FC = () => {
       
     } else {
       return <div className='Popup'>
-          
+           <p>Список менеджеров:</p>
+            <ul>
+              <li>
+                <p className='manager'>Евгений Сергеевич Грировский</p>
+                <p>+79183563878</p>
+              </li>
+              <li>
+                <p className='manager'>Ахсарбек Валерьевич Джигкаев</p>
+                <p>+79183563878</p>
+              </li>
+              <li>
+                <p className='manager'>Казбек Болевич Гозоев</p>
+                <p>+79183563878</p>
+              </li>
+              <li>
+                <p className='manager'>Андрей Сергеевич Середенко</p>
+                <p>+79183563878</p>
+              </li>
+              <li>
+                <p className='manager'>Артур Джамболатович Баскаев</p>
+                <p>+79183563878</p>
+              </li>
+            </ul>
       </div>
     }
 }
